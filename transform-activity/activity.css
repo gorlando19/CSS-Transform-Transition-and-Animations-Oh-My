@@ -1,3 +1,10 @@
-main {
+/* * {
+    border: 1px solid gold;
+} */
 
+main {
+    
+    width: 70%;
+    height:100%;
+    transform: skew(0deg, -10deg);
 }

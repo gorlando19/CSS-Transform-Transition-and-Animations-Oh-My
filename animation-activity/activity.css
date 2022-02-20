@@ -1,3 +1,7 @@
+* {
+  border: 1px solid gold;
+}
+
 .hamburger:hover > div:nth-child(1){
   background-color: ghostwhite;
   animation-name: top;
@@ -21,23 +25,27 @@
 nav {
   opacity: 0;
   transition-duration: 1s;
+  
 }
 
 .hamburger:hover ~ nav {
   opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes top {
-  from {}
-  to {}
-}
+  from {transform: rotate(0deg)}
+  to {transform: translateY(33px) rotate(45deg)}
+  
+} 
 
 @keyframes middle {
-  from {}
-  to {}
+  0% {transform: scale(0)}
+  100% {transform: scale(0)}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform: rotate(0deg)}
+  to {transform: translateY(-33px) rotate(-45deg)}
 }
+
